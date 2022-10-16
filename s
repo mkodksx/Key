@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RUN V1", "DarkTheme")
+local Tab = Window:NewTab("เมนู")
+local Section = Tab:NewSection("สคริป")
+
+Section:NewButton("สคริปฟรี", "กดเพื่อใช่สคริป", function()
+  loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+local Section = Tab:NewSection("VIP")
+Section:NewButton("VIP", "กดเพื่อใช่VIP", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mkodksx/RUN-V1-VIP/main/README.md"))()
+end)
